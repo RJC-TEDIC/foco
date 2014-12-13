@@ -22,46 +22,40 @@ function cargarMapa(){
 			"type": "Feature",
 			"geometry": {
 				"type": "Point",
-				"coordinates":[ 
-				    "-57.521591",
-				    "-25.335409"
+				"coordinates": [ 
+				    "-57.56287111111111",
+				    "-25.349559444444445"
 				]
 		    },
 			"properties": {
-			    "nombre": "Startup Weekend Asunci\u00f3n",
-				"lugar": "Aula Magna de la Facultad Polit\u00e9cnica de la Universidad Nacional de Asunci\u00f3n",
-				"fecha_inicio": "04-04-2014", 
-				"fecha_fin": "06-04-2014"
+			    "institucion": "Esc. Bás. Nº 3652 San José Obrero",
+				"justificacion": "Institucion que sera beneficiada con el almuerzo escolar con el presupuesto de la Gobernacion del Departamento Central."
 			}
 		},{
 			"type": "Feature",
 			"geometry": {
 				"type": "Point", 
 				"coordinates": [
-				    "-57.521591",
-				    "-25.335409"
+				    "-57.53095805555555",
+				    "-25.314784444444445"
 				]
 		    },
 			"properties":{
-			    "nombre": "Festival Latinoamericano de Instalaci\u00f3n de Software Libre (FLISOL)",
-				"lugar": "Aula Magna de la Facultad Polit\u00e9cnica de la Universidad Nacional de Asunci\u00f3n",
-				"fecha_inicio": "26-04-2014",
-				"fecha_fin": "26-04-2014"
+			    "institucion": "Esc. Bás. Nº 2001 Don Bosco",
+				"justificacion": "Es sabido la importancia de la correcta alimentación para un adecuado rendimiento académico por está razón solicitamos seguir beneficiados con el almuerzo escolar, el cual es sumamente valorado por los alumnos"
 		    }
 		},{
 			"type": "Feature",
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-		            "-57.521591",
-		            "-25.335409"
+		            "-57.555636111111106",
+		            "-25.323371666666667"
 		        ]
 		    },
 		    "properties": {
-		    	"nombre": "Festival de Danza Paraguaya ",
-		    	"lugar": "Aula Magna de la Facultad Polit\u00e9cnica de la Universidad Nacional de Asunci\u00f3n",
-		    	"fecha_inicio": "21-06-2014",
-		    	"fecha_fin": "25-06-2014"
+		    	"institucion": "Esc. Bás. Nº 353 Pitiantuta",
+		    	"justificacion": "Solicitamos el alimento  porque los niños/as se sienten más motivados y prestan la atención necesario en el desarrollo de las clases, asi mismo el porcentaje de  ausentismo disminuye"
 		    }
 		}
 	    ]
@@ -69,7 +63,16 @@ function cargarMapa(){
 	
 	// Layer GeoJSON.
 	var v_geojsonLayer = L.geoJson(v_geojsonFeature, {
-		onEachFeature: onEachFeature
+		onEachFeature: onEachFeature,
+		pointToLayer: function(p_feature, p_latlng) {
+            var v_icono =  L.icon({ 
+                iconUrl: 'recursos/imagenes/iconos/institucion.png', 
+                iconSize: [32, 32]
+            });  
+            return L.marker(p_latlng, {
+            	icon: v_icono
+            });                                 
+        }
 	});
 	
 	// Cluster de marcadores.
