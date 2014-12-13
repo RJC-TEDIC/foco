@@ -25,7 +25,6 @@
 	  $(document).ready(function(){
 			$(".wheel-button").wheelmenu({
         trigger: "hover",
-        animation: "fly",
         animationSpeed: "fast"
       });
 		});
@@ -47,85 +46,65 @@
         <div class="container">
             <div class="row">
                 <div class="board">
-                    <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
-                    <div class="board-inner">
+                  <div class="board-inner">
                     <ul class="nav nav-tabs" id="myTab">
-                    <div class="liner"></div>
-                     <li class="active">
-                     <a href="#home" data-toggle="tab" title="" data-original-title="welcome">
-                      <span class="round-tabs one">
-                              <i class="glyphicon glyphicon-home"></i>
+                      <div class="liner"></div>
+                      <li class="active">
+                        <a href="#home" data-toggle="tab" title="" data-original-title="welcome">
+                          <span class="round-tabs one">
+                            <i class="glyphicon glyphicon-home"></i>
+                          </span> 
+                        </a>
+                      </li>
+                    <li class="">
+                      <a href="#profile" data-toggle="tab" title="" data-original-title="profile">
+                       <span class="round-tabs two">
+                           <i class="glyphicon glyphicon-user"></i>
+                       </span> 
+                      </a>
+                    </li>
+                    <li class=""><a href="#messages" data-toggle="tab" title="" data-original-title="foco goodies">
+                      <span class="round-tabs three">
+                        <i class="glyphicon glyphicon-gift"></i>
+                      </span> </a>
+                    </li>
+                    <li class=""><a href="#settings" data-toggle="tab" title="" data-original-title="blah blah">
+                      <span class="round-tabs four">
+                        <i class="glyphicon glyphicon-comment"></i>
                       </span> 
-                  </a></li>
-
-                  <li class=""><a href="#profile" data-toggle="tab" title="" data-original-title="profile">
-                     <span class="round-tabs two">
-                         <i class="glyphicon glyphicon-user"></i>
-                     </span> 
-           </a>
-                 </li>
-                 <li class=""><a href="#messages" data-toggle="tab" title="" data-original-title="foco goodies">
-                     <span class="round-tabs three">
-                          <i class="glyphicon glyphicon-gift"></i>
-                     </span> </a>
-                     </li>
-
-                     <li class=""><a href="#settings" data-toggle="tab" title="" data-original-title="blah blah">
-                         <span class="round-tabs four">
-                              <i class="glyphicon glyphicon-comment"></i>
-                         </span> 
-                     </a></li>
-
+                      </a>
+                    </li>
                      <li class=""><a href="#doner" data-toggle="tab" title="" data-original-title="completed">
-                         <span class="round-tabs five">
-                              <i class="glyphicon glyphicon-ok"></i>
-                         </span> </a>
+                        <span class="round-tabs five">
+                          <i class="glyphicon glyphicon-ok"></i>
+                        </span></a>
                      </li>
-                     
-                     </ul>
-                    </div>
-
-                    
-<div class="clearfix"></div>
-</div>
-
-</div>
-</div>
-</div>
+                   </ul>
+                  </div>    
+                  <div class="clearfix"></div>
+              </div>
+          </div>
+        </div>
+      </div>
     <div class="container">
-
       <div class="jumbotron">
         <img class="logo-img" src="images/foco-logo.png" alt="Logo Fonacide Control">
       </div>
-      <div class="row">
-          <div class="main"> <a href="#wheel" class="wheel-button"> <img src="images/fonacide.png" width="200px" height="200px"></a>
-      <ul id="wheel"  data-angle="all">
-      <li class="item"><a href="#home">Deposito de Recursos</a></li>
-      <li class="item"><a href="#home">Identificacion de Necesidades</a></li>
-      <li class="item"><a href="#home">Llenado del Formulario</a></li>
-      <li class="item"><a href="#home">Presentación de los Formularios de Microplanificación</a></li>
-      <li class="item"><a href="#home">Elaboración del Listado de Priorización</a></li>
-      <li class="item"><a href="#home">Coordinación a nivel Departamental</a></li>
-      <li class="item"><a href="#home">Presentación del Listado</a></li>
-      <li class="item"><a href="#home">Procesos Licitatorios</a></li>
-      <li class="item"><a href="#home">Ejecución de obras</a></li>
-      <li class="item"><a href="#home">EValuación</a></li>
+        <div class="row">
+            <div class="main"> <a href="#wheel" class="wheel-button"> <img src="images/fonacide.png" width="200px" height="200px"></a>
+        <ul id="wheel"  data-angle="all">
+          <li class="item"><a href="#home">Deposito de Recursos</a></li>
+          <li class="item"><a href="#home">Identificacion de Necesidades</a></li>
+          <li class="item"><a href="#home">Llenado del Formulario</a></li>
+          <li class="item"><a href="#home">Presentación de los Formularios de Microplanificación</a></li>
+          <li class="item"><a href="#home">Elaboración del Listado de Priorización</a></li>
+          <li class="item"><a href="#home">Coordinación a nivel Departamental</a></li>
+          <li class="item"><a href="#home">Presentación del Listado</a></li>
+          <li class="item"><a href="#home">Procesos Licitatorios</a></li>
+          <li class="item"><a href="#home">Ejecución de obras</a></li>
+          <li class="item"><a href="#home">EValuación</a></li>
       </ul>
       </div>
-      </div>
-      <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+    </div>
 </body>
 </html>
