@@ -10,7 +10,12 @@
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+		    <!-- Bootstrap core CSS -->
+    <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="./dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
 		<script src="js/modernizr.custom.js"></script>
 <!-- 
         <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -18,53 +23,46 @@
 
 	</head>
 	<body>
-		<div class="container pull-left">	
-			</header>
-				<nav id="menu" class="nav">					
-					<ul>
-						<li>
-							<a href="index.html">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-home"></i>
-								</span>
-								<span>Inicio</span>
-							</a>
-						</li>
-						<li>
-							<a href="busquedas.html">
-								<span class="icon"> 
-									<i aria-hidden="true" class="icon-search"></i>
-								</span>
-								<span>Busquedas</span>
-							</a>
-						</li>
-						<li>
-							<a href="estadisticas.html">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-stats"></i>
-								</span>
-								<span>Estadisticas</span>
-							</a>
-						</li>
-						<li>
-							<a href="denunciar.html">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-hammer"></i>
-								</span>
-								<span>Denunciar</span>
-							</a>
-						</li>
-						<li>
-							<a href="http://issuu.com/reaccionpy/docs/paraguayoite_proceso_fonacide_web">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-download"></i>
-								</span>
-								<span>Descarga el PDF!</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-		</div><!-- /container -->
+    <nav class="navbar navbar-fixed-top menu superior foco_menu" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar" style="height:24px;"><img src="menu_icon.png" alt=""></span>
+       
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Inicio</a></li>
+        <li class="active"><a href="estadisticas.html">Estadisticas</a></li>
+        <li class="active"><a href="denunciar.html">Denunciar</a></li>
+        <li><a href="#">Proceso del FONACIDE</a></li>
+        <li><a href="#">Proveedores</a></li>
+        <li><a href="#">Sociedad Civil</a></li>
+        <li><a href="#">Sociedad Civil</a></li>
+            
+          </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+
+
+
+      <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Iniciar Sesion <strong class="caret"></strong></a>
+            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+              <form method="post" action="login" accept-charset="UTF-8">
+                 <input type="text" class="form-control" name="text" id="" placeholder="Usuario"/>
+            <input type="text" class="form-control" name="text" id="" placeholder="Password"  />
+            <button class="btn btn-default">Iniciar Sesión</button><br>
+            <br>
+              </form>
+            </div>
+          </li>
+      </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 		<!--
         <div class="container">
             
