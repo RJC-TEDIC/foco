@@ -10,6 +10,7 @@
 
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="js/modernizr.custom.js"></script>
     <title>Foco</title>
     <style>
@@ -20,7 +21,7 @@
     padding-top: 25px;
   }
   .buscador{
-    margin-top: 100px;
+    margin-top: 420px;
   }
   .info-mapa{
     background-color: #DDDEDE;
@@ -123,43 +124,70 @@
   </head>
 
   <body role="document" onload="cargarMapa()">
-
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-fixed-top menu superior foco_menu" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only"></span>
-            <span class="icon-bar" style="height:24px;"><img src="menu_icon.png" alt=""></span>
-       
-          </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Inicio</a></li>
-        <li><a href="#">Proceso del FONACIDE</a></li>
-        <li><a href="#">Proveedores</a></li>
-        <li><a href="#">Sociedad Civil</a></li>
-        <li><a href="#">Sociedad Civil</a></li>
-            
+    <div class="container pull-left"> 
+      </header>
+        <nav id="menu" class="nav navbar-fixed-top">         
+          <ul>
+            <li>
+              <a href="index.html">
+                <span class="icon">
+                  <i aria-hidden="true" class="icon-home"></i>
+                </span>
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li>
+              <a href="busquedas.html">
+                <span class="icon"> 
+                  <i aria-hidden="true" class="icon-search"></i>
+                </span>
+                <span>Busquedas</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon">
+                  <i aria-hidden="true" class="icon-stats"></i>
+                </span>
+                <span>Estadisticas</span>
+              </a>
+            </li>
+            <li>
+              <a href="denunciar.html">
+                <span class="icon">
+                  <i aria-hidden="true" class="icon-hammer"></i>
+                </span>
+                <span>Denunciar</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://issuu.com/reaccionpy/docs/paraguayoite_proceso_fonacide_web">
+                <span class="icon">
+                  <i aria-hidden="true" class="icon-download"></i>
+                </span>
+                <span>Descarga el PDF!</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://issuu.com/reaccionpy/docs/paraguayoite_proceso_fonacide_web">
+                <span class="icon">
+                  <i aria-hidden="true" class="icon-download"></i>
+                </span>
+                <span>Proveedores</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://issuu.com/reaccionpy/docs/paraguayoite_proceso_fonacide_web">
+                <span class="icon">
+                  <i aria-hidden="true" class="icon-download"></i>
+                </span>
+                <span>Iniciar Sesion</span>
+              </a>
+            </li>
           </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Iniciar Sesion <strong class="caret"></strong></a>
-            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-              <form method="post" action="login" accept-charset="UTF-8">
-                 <input type="text" class="form-control" name="text" id="" placeholder="Usuario"/>
-            <input type="text" class="form-control" name="text" id="" placeholder="Password"  />
-            <button class="btn btn-default">Iniciar Sesión</button><br>
-            <br>
-              </form>
-            </div>
-          </li>
-      </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+        </nav>
+    </div><!-- /container -->
+    <div class="clear:both"></div>
 
     <div class="container" role="main">
 
