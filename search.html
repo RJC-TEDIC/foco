@@ -165,7 +165,22 @@ margin-right:auto;
                   output += '<div class="col-md-2"><img class="img-responsive" src="' +val.img+ '" alt="' + val.institucion + '"/></div>';
                   output += '<div class="col-md-7">';
                   output += '<a href="'+ val.url +'"><h5>'  + val.institucion + '</h5></a>';
-                  output += '<p>'   + val.location    + '</p>'
+                  output += '<h4>Aulas :'   + val.aulas    + '</h4>'
+                  output += '<p>Priorizacion :'   + val.priorizacion_a    + '</p>'
+                  output += '<p>Beneficiados :'   + val.beneficiados_a    + '</p>'
+                  output += '<h4>Mobiliarios :'   + val.mobiliarios    + '</h4>'
+                  output += '<p>Priorizacion :'   + val.priorizacion_b    + '</p>'
+                  output += '<p>Beneficiados :'   + val.beneficiados_b    + '</p>'
+                  output += '<h4>Sanitarios :'   + val.sanitarios    + '</h4>'
+                  output += '<p>Priorizacion :'   + val.priorizacion_c    + '</p>'
+                  output += '<p>Beneficiados :'   + val.beneficiados_c    + '</p>'
+                  output += '<h4>Otros Espacios : '   + val.otros_espacios    + '</h4>'
+                  output += '<p>Priorizacion :'   + val.priorizacion_d    + '</p>'
+                  output += '<p>Beneficiados :'   + val.beneficiados_d    + '</p>'
+                  output += '<p>Año :'   + val.anho    + '</p>'
+                  output += '</div>';
+                  output += '</div>';
+
                   output += '</div>';
                   output += '</div>';
                   if(count%1 == 0){
@@ -230,7 +245,6 @@ margin-right:auto;
           <input class="form-control input-lg" id="search" placeholder="Ingrese aqu&iacute lo que desea buscar..">
         </div>
       </form>
-</div>
        <div class="row vertical-offset-100">
                     <div class="col-md-4 col-md-offset-4">
                         <div class="panel panel-default">                             
@@ -255,8 +269,9 @@ margin-right:auto;
                             </div>
                         </div>
                     </div>
-      <div id="results"></div>
+</div>
 
+      <div id="results"></div>
 
 
 </div>
