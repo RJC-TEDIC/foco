@@ -415,6 +415,10 @@ a, button {
 	.nav .navtoogle{
 		margin: 0;
 		display: block;
+		background: #F29314;
+		color: white;
+		border-color: white;
+
 	}
 	
 	/* Animating the height of the navigation when the button is clicked */
