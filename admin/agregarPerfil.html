@@ -19,29 +19,29 @@
 -o-background-size: cover;
 background-size: cover;
   }
-	.foco_menu{
+  .foco_menu{
 background-color: rgba(255, 255, 255, 0.6);
-	}
-	.buscador{
-		margin-top:100px;
-	}
+  }
+  .buscador{
+    margin-top:100px;
+  }
 
-	.buscador_caja{
-		padding-top: 25px;
-	}
-	.info-mapa{
-		background-color: #DDDEDE;
-	}
-	.mapa-container{
-		padding-top: 30px;
-		padding: 0 0 0 0;
-	}
-	.contenedor-info{
-		margin-top:20px;
-	}
+  .buscador_caja{
+    padding-top: 25px;
+  }
+  .info-mapa{
+    background-color: #DDDEDE;
+  }
+  .mapa-container{
+    padding-top: 30px;
+    padding: 0 0 0 0;
+  }
+  .contenedor-info{
+    margin-top:20px;
+  }
 
 
-#navbar	a:link {
+#navbar a:link {
     text-decoration: none;
     color:#444;
 }
@@ -71,20 +71,20 @@ background-color: rgba(255, 255, 255, 0.6);
 font-weight: 200;
 }
 .titulo-item-obtenido{
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 
 .logo-medio{
-	text-align: center;
+  text-align: center;
 }
 @media screen and (max-width: 991px) {
     .logo-medio {
 text-align: center;
     }
     .info-mapa{
-    	margin-top: 20px;
-    	padding-top: 20px;
+      margin-top: 20px;
+      padding-top: 20px;
 
     }
 
@@ -143,10 +143,10 @@ text-align: center;
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-    				<li class="active"><a href="#">Inicio</a></li>
-    				<li><a href="index.html">Usuarios</a></li>
-    				<li><a href="perfiles.html">Perfiles</a></li>
-    				<li><a href="instituciones.html">Instituciones</a></li>
+            <li class="active"><a href="#">Inicio</a></li>
+            <li><a href="index.html">Usuarios</a></li>
+            <li><a href="perfiles.html">Perfiles</a></li>
+            <li><a href="instituciones.html">Instituciones</a></li>
           </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -171,11 +171,17 @@ text-align: center;
     <p class="text-center" style="color:#777"><br><img src="./dist/img/foco.png" alt=""><h2 class="text-center">Panel de Administración</h2></p>
 <hr>
   <div class="col-md-12" style="height:500px;background-color: rgba(255, 255, 255, 0.85);">
-<h1 class="page-header">Usuarios - <a href="agregarUsuario.html"><button class="btn btn-default">Agregar</button></a></h1>
-<table class="table">
-  <tr><th>Usuario</th><th>Institucion</th><th>Perfil</th><th>Opciones</th></tr>
-  <tr><td>admin</td><td>--</td><td>administrador</td><td><button class="btn btn-default">Editar</button> <button class="btn btn-default">Eliminar</button></td></tr>
-</table>
+<h1 class="page-header">Agregar Perfil de Permisos - <a href="perfiles.html"><button class="btn btn-default">Volver</button></a></h1>
+<div class="col-md-4">
+<form action="#">
+  <label for="usuario">Nombre de Perfil</label>
+<input class="form-control" type="text" name="usuario" id="" placeholder="Nombre del Perfil">
+  
+<br>
+<button class="btn btn-default">Crear</button><button class="btn btn-default">Cancelar</button>
+
+</div>
+</form>
   </div>
 
 	</div>
