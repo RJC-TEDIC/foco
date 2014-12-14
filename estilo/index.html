@@ -16,7 +16,7 @@
 	background-image:url("./dist/img/bg.jpg");
 	    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: top; 
 	}
 	.foco_menu{
 background-color: rgba(255, 255, 255, 0.6);
@@ -32,13 +32,11 @@ background-color: rgba(255, 255, 255, 0.6);
 		background-color: #DDDEDE;
 	}
 	.mapa-container{
-		background-color: white;
 		padding-top: 30px;
 		padding: 0 0 0 0;
 	}
 	.contenedor-info{
 		margin-top:20px;
-		background-color: white;
 	}
 
 
@@ -75,6 +73,7 @@ font-weight: 200;
 	text-decoration: underline;
 }
 
+
 .logo-medio{
 	text-align: center;
 }
@@ -82,6 +81,21 @@ font-weight: 200;
     .logo-medio {
 text-align: center;
     }
+    .info-mapa{
+    	margin-top: 20px;
+    	padding-top: 20px;
+
+    }
+
+
+      #mapa {
+            height: 80%;
+            width: 90%;
+            margin: 0 auto;
+            right: 0px;
+      }
+
+
 }
     </style>
 
@@ -121,10 +135,9 @@ text-align: center;
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="sr-only"></span>
+            <span class="icon-bar" style="height:24px;"><img src="menu_icon.png" alt=""></span>
+       
           </button>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -132,6 +145,7 @@ text-align: center;
 				<li class="active"><a href="#">Inicio</a></li>
 				<li><a href="#">Proceso del FONACIDE</a></li>
 				<li><a href="#">Proveedores</a></li>
+				<li><a href="#">Sociedad Civil</a></li>
 				<li><a href="#">Sociedad Civil</a></li>
             
           </ul>
@@ -143,6 +157,7 @@ text-align: center;
                 <li><a href="#"><input type="text" class="form-control" name="text" id="" placeholder="Usuario"/></a></li>
                 <li><a href="#"><input type="text" class="form-control" name="text" id="" placeholder="Password"  /></a></li>
                 <li><a href="#"><button class="btn btn-default">Iniciar Sesión</button></a></li>
+                	<li> </li>
               </ul>
             </li>
       </ul>
@@ -171,7 +186,7 @@ text-align: center;
 
 
 	</div>
-		<div class="col-md-4 info-mapa" style="min-height:500px;">
+		<div class=" info-mapa col-md-4" style="min-height:500px;padding-left:40px;">
 			<h3 class="titulo-institucion">Colegio Nacional Asunción Escalada</h3>
 			<hr>
 
