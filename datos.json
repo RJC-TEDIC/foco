@@ -2,21 +2,25 @@
   {
     "institucion":"Colegio Asuncion",
     "img": "http://emailsparticulares.com/55-84-large/colegios-de-asturias.jpg",
-    "location":"Asuncion, Paraguay"
+    "location":"Asuncion, Paraguay",
+    "url":"buscador.html"
   },
   {
     "institucion":"Colegio San Jose",
     "img": "http://emailsparticulares.com/55-84-large/colegios-de-asturias.jpg",
-    "location":"Asuncion, Paraguay"
+    "location":"Asuncion, Paraguay",
+    "url":"buscador.html"
   },
   {
     "institucion":"Colegio Andres",
     "img": "http://emailsparticulares.com/55-84-large/colegios-de-asturias.jpg",
-    "location":"Asuncion, Paraguay"
+    "location":"Asuncion, Paraguay",
+    "url":"buscador.html"
   },
   {
     "institucion":"Colegio ABC",
     "img": "http://emailsparticulares.com/55-84-large/colegios-de-asturias.jpg",
-    "location":"Asuncion, Paraguay"
+    "location":"Asuncion, Paraguay",
+    "url":"buscador.html"
   }
 ]
