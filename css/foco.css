@@ -2,21 +2,30 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,700);
 html {
 height: 100%;
+background: url(../images/imgback.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 body {
-background: #f4eedf;
 padding: 0;
 text-align: center;
 font-family: 'open sans';
 position: relative;
 margin: 0;
 height: 100%;
+background-color: rgba(255, 255, 255, 0);
 }
 .logo-img {
 	height: 100px;
 }
+.logo-img-2 {
+	height: 80px;
+	margin-top: -8px;
+}
 @media screen and (min-width: 768px){
-	.jumbotron {
+	.bg {
 		padding: 18px 0;
 		background-color: rgba(238, 238, 238, 0);
 	}
@@ -61,7 +70,7 @@ width: 200px;
 height: 200px;
 color: white;
 display: block;
-margin: 70px auto 20px;
+margin: 115px auto 20px;
 }
 .wheel-button:hover {
 color: white;
@@ -96,12 +105,15 @@ transform: rotate(135deg);
 -webkit-transform: rotate(135deg); /* Safari and Chrome */
 }
 .wheel li a, .wheel li a:visited {
-background: #f39415;
+background: rgba(243, 148, 21, 0.73);
 border-radius: 60px;
 padding: 10px;
 text-align: center;
-width: 110px;
-height: 110px;
+width: 85px;
+height: 85px;
+text-decoration: none;
+font-size: 30pt;
+line-height: 65px;
 box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 1px rgba(255,255,255,0.5);
 -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 1px rgba(255,255,255,0.5);
 -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 1px rgba(255,255,255,0.5);
@@ -131,8 +143,8 @@ position: relative;
 margin: 0;
 padding: 0;
 list-style: none;
-width: 450px; /* Tamaño del circulo a agrandar  */
-height: 450px; /* Tamaño del circulo del hover agrandar  */
+width: 400px; /* Tamaño del circulo a agrandar  */
+height: 400px; /* Tamaño del circulo del hover agrandar  */
 visibility: hidden;
 position: relative;
 display: none;
@@ -154,13 +166,10 @@ display: block;
   	top:0px;
 	}
 }
-.board{
-background: #fff;
-/*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
-}
+
 .board .nav-tabs {
     position: relative;
-    /* border-bottom: 0; */
+     border-bottom: 0;
     /* width: 80%; */
 
     margin-bottom: 0;
@@ -203,6 +212,16 @@ span.round-tabs{
     display: inline-block;
     border-radius: 100px;
     background: white;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+span.round-tabs-foco{
+
+    display: inline-block;
+    border-radius: 100px;
     z-index: 2;
     position: absolute;
     left: 0;
@@ -307,6 +326,7 @@ li.active:after {
    margin: 20px auto;
    border-radius: 100%;
    padding: 0;
+   border: none;
 }
 
 .nav-tabs > li a:hover{

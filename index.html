@@ -5,12 +5,10 @@
     <title>Foco - Fonacide Control</title>
     <meta name="title" content="jQuery Wheel Menu by Pete R. | The Pete Design" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'> 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.wheelmenu.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="css/foco.css" />
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -36,13 +34,11 @@
             if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
             else $('head > link').filter(':first').replaceWith(defaultCSS); 
         }
-        $( document ).ready(function() {
-          var iframe_height = parseInt($('html').height()); 
-          window.parent.postMessage( iframe_height, 'http://google.com');
-        });
     </script>
   </head>
     <body>
+    <div>
+
         <div class="container">
             <div class="row">
                 <div class="board">
@@ -58,14 +54,14 @@
                       </li>
                     <li class="">
                       <a href="#profile" data-toggle="tab" title="" data-original-title="profile">
-                       <span class="round-tabs two">
+                       <span class="round-tabs three">
                            <i class="glyphicon glyphicon-user"></i>
                        </span> 
                       </a>
                     </li>
                     <li class=""><a href="#messages" data-toggle="tab" title="" data-original-title="foco goodies">
-                      <span class="round-tabs three">
-                        <i class="glyphicon glyphicon-gift"></i>
+                      <span class="round-tabs-foco two">
+                        <i><img class="logo-img-2" src="images/logo-min.png"></i>
                       </span> </a>
                     </li>
                     <li class=""><a href="#settings" data-toggle="tab" title="" data-original-title="blah blah">
@@ -87,22 +83,19 @@
         </div>
       </div>
     <div class="container">
-      <div class="jumbotron">
-        <img class="logo-img" src="images/foco-logo.png" alt="Logo Fonacide Control">
-      </div>
         <div class="row">
             <div class="main"> <a href="#wheel" class="wheel-button"> <img src="images/fonacide.png" width="200px" height="200px"></a>
         <ul id="wheel"  data-angle="all">
-          <li class="item"><a href="#home">Deposito de Recursos</a></li>
-          <li class="item"><a href="#home">Identificacion de Necesidades</a></li>
-          <li class="item"><a href="#home">Llenado del Formulario</a></li>
-          <li class="item"><a href="#home">Presentación de los Formularios de Microplanificación</a></li>
-          <li class="item"><a href="#home">Elaboración del Listado de Priorización</a></li>
-          <li class="item"><a href="#home">Coordinación a nivel Departamental</a></li>
-          <li class="item"><a href="#home">Presentación del Listado</a></li>
-          <li class="item"><a href="#home">Procesos Licitatorios</a></li>
-          <li class="item"><a href="#home">Ejecución de obras</a></li>
-          <li class="item"><a href="#home">EValuación</a></li>
+          <li class="item"><a href="#home">7</a></li>
+          <li class="item"><a href="#home">6</a></li>
+          <li class="item"><a href="#home">5</a></li>
+          <li class="item"><a href="#home">4</a></li>
+          <li class="item"><a href="#home">3</a></li>
+          <li class="item"><a href="#home">2</a></li>
+          <li class="item"><a href="#home">1 </a></li>
+          <li class="item"><a href="#home">10</a></li>
+          <li class="item"><a href="#home">9</a></li>
+          <li class="item"><a href="#home">8</a></li>
       </ul>
       </div>
     </div>
