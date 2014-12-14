@@ -1,4 +1,7 @@
-body {padding-top:20px;}
-.row {
-margin-top: 60px;
+.container {
+padding-right: 0px;
+padding-left: 0px; */
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 30px;
 }
