@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Foco - Fonacide Control</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <meta name="title" content="jQuery Wheel Menu by Pete R. | The Pete Design" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'> 
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.wheelmenu.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
+    
     <link rel="stylesheet" type="text/css" href="css/foco.css" />
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -33,8 +35,34 @@
         function changeCSS(css){
             if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
             else $('head > link').filter(':first').replaceWith(defaultCSS); 
-        }
+        };
     </script>
+    <style>
+      .black_overlay{
+     display: none;
+    background-color: rgba(0, 0, 0, 0.51);
+    width: 100%;
+    height: 100%;
+    z-index:1001;
+/*    -moz-opacity: 0.8;*/
+/*    opacity:.80;*/
+/*    filter: alpha(opacity=80);*/
+}
+.white_content {
+  display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 200px;
+    height: 200px;
+    padding: 16px;
+    border: 16px solid orange;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+
+    </style>
   </head>
     <body>
     <div>
@@ -55,7 +83,7 @@
                     <li class="">
                       <a href="#profile" data-toggle="tab" title="" data-original-title="profile">
                        <span class="round-tabs three">
-                           <i class="glyphicon glyphicon-user"></i>
+                           <i class="glyphicon glyphicon-search"></i>
                        </span> 
                       </a>
                     </li>
@@ -66,13 +94,13 @@
                     </li>
                     <li class=""><a href="#settings" data-toggle="tab" title="" data-original-title="blah blah">
                       <span class="round-tabs four">
-                        <i class="glyphicon glyphicon-comment"></i>
+                        <i class="glyphicon glyphicon-ok"></i>
                       </span> 
                       </a>
                     </li>
                      <li class=""><a href="#doner" data-toggle="tab" title="" data-original-title="completed">
                         <span class="round-tabs five">
-                          <i class="glyphicon glyphicon-ok"></i>
+                          <i class="glyphicon glyphicon-comment"></i>
                         </span></a>
                      </li>
                    </ul>
@@ -86,7 +114,7 @@
         <div class="row">
             <div class="main"> <a href="#wheel" class="wheel-button"> <img src="images/fonacide.png" width="200px" height="200px"></a>
         <ul id="wheel"  data-angle="all">
-          <li class="item"><a href="#home">7</a></li>
+          <li class="item"><a href="#home" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">7</a></li>
           <li class="item"><a href="#home">6</a></li>
           <li class="item"><a href="#home">5</a></li>
           <li class="item"><a href="#home">4</a></li>
@@ -98,6 +126,12 @@
           <li class="item"><a href="#home">8</a></li>
       </ul>
       </div>
-    </div>
+      <div id="light" class="white_content">
+    This is the lightbox content.
+    <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+        Close
+    </a>
+</div>
+<div id="fade" class="black_overlay"></div>
 </body>
 </html>

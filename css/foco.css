@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,700);
 html {
 height: 100%;
-background: url(../images/imgback.jpg) no-repeat center center fixed; 
+background: url(../images/background.jpg) no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -109,11 +109,11 @@ background: rgba(243, 148, 21, 0.73);
 border-radius: 60px;
 padding: 10px;
 text-align: center;
-width: 85px;
-height: 85px;
+width: 65px;
+height: 65px;
 text-decoration: none;
 font-size: 30pt;
-line-height: 65px;
+line-height: 40px;
 box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 1px rgba(255,255,255,0.5);
 -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 1px rgba(255,255,255,0.5);
 -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 1px rgba(255,255,255,0.5);
@@ -123,6 +123,15 @@ color: white;
 -o-transition: all 0.25s ease;
 transition: all 0.25s ease;
 }
+@media screen and (max-width : 320px){
+	.wheel li a, .wheel li a:visited {
+		width: 55px;
+		height: 55px;
+	}
+	.span.round-tabs-foco{
+		left: -13px;
+	}
+} 
 .wheel li a:hover {
 background: rgba(0,0,0,0.8);
 }
@@ -143,8 +152,8 @@ position: relative;
 margin: 0;
 padding: 0;
 list-style: none;
-width: 400px; /* Tamaño del circulo a agrandar  */
-height: 400px; /* Tamaño del circulo del hover agrandar  */
+width: 370px; /* Tamaño del circulo a agrandar  */
+height: 370px; /* Tamaño del circulo del hover agrandar  */
 visibility: hidden;
 position: relative;
 display: none;
@@ -224,7 +233,7 @@ span.round-tabs-foco{
     border-radius: 100px;
     z-index: 2;
     position: absolute;
-    left: 0;
+    left: -15px;
     text-align: center;
     font-size: 25px;
 }
@@ -363,7 +372,7 @@ padding-top: 50px;
 @media( max-width : 585px ){
     
     .board {
-width: 90%;
+width: 100%;
 height:auto !important;
 }
     span.round-tabs {
@@ -391,3 +400,6 @@ left: 35%;
     padding:12px 20px;
     }
 }
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
