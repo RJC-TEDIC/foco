@@ -9,25 +9,18 @@
     <meta name="author" content="">
 
     <link rel="icon" href="./favicon.ico">
-
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <script src="js/modernizr.custom.js"></script>
     <title>Foco</title>
     <style>
-    body{
-  background: url("./dist/img/background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-  }
   .foco_menu{
-background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   }
-  .buscador{
-    margin-top:100px;
-  }
-
   .buscador_caja{
     padding-top: 25px;
+  }
+  .buscador{
+    margin-top: 100px;
   }
   .info-mapa{
     background-color: #DDDEDE;
@@ -40,70 +33,70 @@ background-color: rgba(255, 255, 255, 0.6);
     margin-top:20px;
   }
 
+  #navbar a:link {
+      text-decoration: none;
+      color:#444;
+  }
 
-#navbar a:link {
-    text-decoration: none;
-    color:#444;
-}
+  #navbar a:visited {
+      text-decoration: none;
+          color:#444;
 
-#navbar a:visited {
-    text-decoration: none;
-        color:#444;
+  }
 
-}
+  #navbar a:hover {
+      text-decoration: underline;
+  }
 
-#navbar a:hover {
+  #navbar a:active {
+      text-decoration: underline;
+  }
+
+          #mapa {
+              height: 100%;
+              width: 105%;
+              margin: 0 auto;
+              right: 15px;
+        }
+
+  .titulo-institucion{
+  font-weight: 200;
+  }
+  .titulo-item-obtenido{
     text-decoration: underline;
-}
+  }
 
-#navbar a:active {
-    text-decoration: underline;
-}
+
+  .logo-medio{
+    text-align: center;
+  }
+  @media screen and (max-width: 991px) {
+      .logo-medio {
+  text-align: center;
+      }
+      .info-mapa{
+        margin-top: 20px;
+        padding-top: 20px;
+
+      }
+
 
         #mapa {
-            height: 100%;
-            width: 105%;
-            margin: 0 auto;
-            right: 15px;
-      }
-
-.titulo-institucion{
-font-weight: 200;
-}
-.titulo-item-obtenido{
-  text-decoration: underline;
-}
+              height: 100%;
+              width: 90%;
+              margin: 0 auto;
+              right: 0px;
+        }
 
 
-.logo-medio{
-  text-align: center;
-}
-@media screen and (max-width: 991px) {
-    .logo-medio {
-text-align: center;
-    }
-    .info-mapa{
-      margin-top: 20px;
-      padding-top: 20px;
-
-    }
-
-
-      #mapa {
-            height: 100%;
-            width: 90%;
-            margin: 0 auto;
-            right: 0px;
-      }
-
-
-}
+  }
     </style>
 
-    <!-- Bootstrap core CSS -->
-    <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="./dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+   <!-- Optional theme -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
     <!-- Custom styles for this template -->
     <link href="theme.css" rel="stylesheet">
@@ -125,7 +118,7 @@ text-align: center;
     <script src="js/libs/leaflet/leaflet.js"></script>
     <script src="js/libs/leaflet/Plugins/leaflet.markercluster.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/MapaOSM.js" type="text/javascript"></script>
-
+    <link rel="stylesheet" href="css/sytle.css">
 
   </head>
 
@@ -143,9 +136,7 @@ text-align: center;
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Inicio</a></li>
-        <li class="active"><a href="estadisticas.html">Estadisticas</a></li>
-        <li class="active"><a href="denunciar.html">Denunciar</a></li>
+        <li class="active"><a href="#">Inicio</a></li>
         <li><a href="#">Proceso del FONACIDE</a></li>
         <li><a href="#">Proveedores</a></li>
         <li><a href="#">Sociedad Civil</a></li>
@@ -154,9 +145,6 @@ text-align: center;
           </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-
-
-
       <li class="dropdown">
             <a class="dropdown-toggle" href="#" data-toggle="dropdown">Iniciar Sesion <strong class="caret"></strong></a>
             <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
@@ -173,10 +161,10 @@ text-align: center;
       </div>
     </nav>
 
-    <div class="container buscador" role="main">
+    <div class="container" role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-   <div class="row">
+   <div class="row buscador">
   <div class="col-md-1 logo-medio"><img src="./dist/img/foco.png" class="responsive-img" alt=""></div>
   <div class="col-md-8 buscador_caja" style="">
     <form action=".">
@@ -188,7 +176,6 @@ text-align: center;
   <div class="col-md-8 mapa-container" style="height:500px;">
 
     <div id="mapa">
-
     </div>
 
 
@@ -198,17 +185,17 @@ text-align: center;
       <h3 class="titulo-institucion">Colegio Nacional Asunción Escalada</h3>
       <hr>
 
-<span class="titulo-item-obtenido">Necesidades: </span><span> Aula, Baño</span><br>
-<span class="titulo-item-obtenido">Licictación: </span><span> Publicada, etc.</span><br>
+        <span class="titulo-item-obtenido">Necesidades: </span><span> Aula, Baño</span><br>
+        <span class="titulo-item-obtenido">Licictación: </span><span> Publicada, etc.</span><br>
 
-<span class="titulo-item-obtenido">Contrucción: </span><span> ...</span><br>
+        <span class="titulo-item-obtenido">Contrucción: </span><span> ...</span><br>
 
-<span class="titulo-item-obtenido">Monto: </span><span> Gs. 45.000.000</span><br>
-<span class="titulo-item-obtenido">Priorización: </span><span> Alta</span><br>
-<span class="titulo-item-obtenido">Plazo: </span><span> 14/11/2013 - 12/12/2014</span><br>
-<span class="titulo-item-obtenido">Contacto: </span><span> ltalavera@imago.com.py</span><br>
-<br>
-<p class="text-center"><button class="btn btn-default"> Comentar/Reportar</button></p>
+        <span class="titulo-item-obtenido">Monto: </span><span> Gs. 45.000.000</span><br>
+        <span class="titulo-item-obtenido">Priorización: </span><span> Alta</span><br>
+        <span class="titulo-item-obtenido">Plazo: </span><span> 14/11/2013 - 12/12/2014</span><br>
+        <span class="titulo-item-obtenido">Contacto: </span><span> ltalavera@imago.com.py</span><br>
+        <br>
+        <p class="text-center"><button class="btn btn-default"> Comentar/Reportar</button></p>
 
     </div>
 
@@ -216,8 +203,6 @@ text-align: center;
 
 
 </div>
-
-
     </div> <!-- /container -->
 
 
