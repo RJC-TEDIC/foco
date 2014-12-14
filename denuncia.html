@@ -92,8 +92,9 @@ text-align: center;
     	padding-top: 20px;
 
     }
-
-
+    .form-signin {
+      width: 100%;
+    }
       #mapa {
             height: 100%;
             width: 90%;
@@ -103,10 +104,13 @@ text-align: center;
     li#input {
       margin: 5px;
     }
-
 }
 li#input {
   margin: 20px;
+}
+.form-signin{
+margin-left:auto;
+margin-right:auto;
 }
     </style>
 
@@ -174,16 +178,15 @@ li#input {
   <div class="col-md-12"><img src="images/logo-denuncia.png" class="responsive-img" alt=""></div>
 <div style="clear:both"></div>
 		<div class=" info-mapa col-md-12" style="min-height:500px;padding-left:40px;">
-			<form class="form-signin" role="form" style="width: 60%;margin-left:auto;
-margin-right:auto;">
+			<form class="form-signin" role="form">
         <h2 class="form-signin-heading">Envie su denuncia, será totalmente anónima</h2>
         <hr>
         <label for="inputEmail">Nombre y Apellidos</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Jose Perez" required autofocus><br>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Jose Perez" required autofocus><br>
         <label for="inputPassword">Email</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="joseperez@example.com" required><br>
+        <input type="text" id="inputPassword" class="form-control" placeholder="joseperez@example.com" required><br>
          <label for="inputPassword">Numero de Telefono</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="097x xxx xxx" required>
+        <input type="number" id="inputPassword" class="form-control" placeholder="097x xxx xxx" required>
         <label class="checkbox-inline">
           <input type="checkbox" id="checkboxEnLinea1" value="opcion_1"> Infraestructura
         </label>
